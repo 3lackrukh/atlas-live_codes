@@ -77,11 +77,8 @@ typedef struct bento_s
 Struct pointers allow you to manipulate the data within a struct dynamically. You can assign addresses of structs to pointers and access the struct's members through these pointers.
 
 ``` c
-// declare a variable of type Bento
-Bento my_lunch; 
-// assign a Bento pointer to the addess of the variable
+Bento my_lunch;
 Bento *ptr_to_lunch = &my_lunch;
-// use pointer to assign values to variables contained in the struct instance
 ptr_to_lunch->protein = "salmon";
 ```
 
@@ -89,16 +86,12 @@ ptr_to_lunch->protein = "salmon";
 When working with structs, especially with pointers, understanding memory allocation and dereferencing is crucial. Allocating memory for a struct can be done using dynamic memory allocation functions like `malloc()` or `calloc()`. Dereferencing a pointer accesses the value stored at the memory location pointed to by the pointer.
 
 ``` c
-// allocate memory for the pointer to struct instance
 Bento *ptr = malloc(sizeof(Bento));
-// ensure memory was allocated
 if (ptr!= NULL) 
-    // assign value to a variable in Bento
-    {
+{
     ptr->protein = "chicken";
-    // make sure to free allocated memory once you're finished with the struct
     free(ptr);
-    }
+}
 ```
 
 ## Conclusion
