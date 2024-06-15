@@ -34,20 +34,20 @@ char *_strdup(char *str)
 
 	if (str == (NULL))
 	{
-        printf("_strdup failed: no string data")
-		return (NULL);
+        printf("_strdup failed: no string data");
+		return(NULL);
 	}
     L = _strlen(str);
 	s = malloc(sizeof(char) * L + 1);
 	if (s == NULL)
 	{
-        printf("_strdup failed: Malloc")
-		return (NULL);
+        printf("_strdup failed: Malloc");
+		return(NULL);
 	}
 	for (i = 0; i < L; i++)
 	{
 		s[i] = str[i];
 	}
 	s[i++] = '\0';
-	return (s);
+	return(s);
 }
