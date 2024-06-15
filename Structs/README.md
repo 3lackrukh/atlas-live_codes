@@ -1,7 +1,13 @@
-# README.md for GitHub Repository Demonstrating Typedef and Struct Concepts in C
+# README.md for GitHub Repository Demonstrating Typedef and Struct Concepts in C for Atlas C24
 
 ## Introduction
-This repository demonstrates the use of typedef and struct keywords in C programming. These keywords are essential for creating more readable and maintainable code by allowing developers to define custom data types and aliases for existing ones. This guide provides examples and explanations to help you understand how to effectively use these features in your C programs.
+This repository demonstrates the use of typedef and struct keywords in C programming. 
+
+These keywords are essential for creating more readable and maintainable code by 
+- allowing developers to define custom data types
+- and aliases for existing ones. 
+
+This guide provides examples and explanations to help you understand how to effectively use these features in your C programs.
 
 ## Table of Contents
 - Introduction
@@ -14,17 +20,25 @@ This repository demonstrates the use of typedef and struct keywords in C program
 - Conclusion
 
 ## Typedef
-The `typedef` keyword allows you to create an alias for a data type, making your code more readable and reducing redundancy. For example, you can create an alias for `unsigned char` as `byte`, which can then be used throughout your code instead of typing out [unsigned char].
+The `typedef` keyword allows you to create an alias for a data type, making your code more readable and reducing redundancy. 
+
+For example, you can create an alias for `unsigned char` as `byte`, which can then be used throughout your code instead of typing out [unsigned char].
 
 `typedef unsigned char byte;`
 
 ## Struct
-The `struct` keyword is used to define a composite data type that can group together variables of different types. This is particularly useful for organizing related data into a single entity.
+The `struct` keyword is used to define a composite data type that can group together variables of different types. This is particularly useful for organizing related data into a single package.
 
-```c struct bento { char *protein; char *side; int calories; };```
+```c 
+    struct bento {
+        char *protein;
+        char *side;
+        int calories;
+    };
+```
 
 ## Combining Typedef and Struct
-By combining `typedef` with `struct`, you can simplify the declaration of structures and their usage in your code. This approach reduces the verbosity associated with defining and using custom data types.
+By combining `typedef` with `struct`, you can simplify the declaration of structures and their usage in your code. This approach reduces unnecessary key-strokes associated with defining and using custom data types.
 
 ``` c
     typedef struct {
@@ -35,7 +49,12 @@ By combining `typedef` with `struct`, you can simplify the declaration of struct
 ```
 
 ## Defining Structs
-Structures can be defined globally, within header files, or in separate header files dedicated to struct definitions. Remember to include the necessary header files in your program if you define structs in external files.
+Structures can be defined 
+- globally 
+- within header files
+- in separate header files dedicated to struct definitions. 
+
+Remember to include the necessary header files in your program if you define structs in external files.
 
 Example of a struct definition in a header file (`bento.h`):
 
@@ -58,8 +77,11 @@ typedef struct bento_s
 Struct pointers allow you to manipulate the data within a struct dynamically. You can assign addresses of structs to pointers and access the struct's members through these pointers.
 
 ``` c
-Bento my_lunch;
+// declare a variable of type Bento
+Bento my_lunch; 
+// assign a Bento pointer to the addess of the variable
 Bento *ptr_to_lunch = &my_lunch;
+// use pointer to assign values to variables contained in the struct instance
 ptr_to_lunch->protein = "salmon";
 ```
 
@@ -67,11 +89,16 @@ ptr_to_lunch->protein = "salmon";
 When working with structs, especially with pointers, understanding memory allocation and dereferencing is crucial. Allocating memory for a struct can be done using dynamic memory allocation functions like `malloc()` or `calloc()`. Dereferencing a pointer accesses the value stored at the memory location pointed to by the pointer.
 
 ``` c
+// allocate memory for the pointer to struct instance
 Bento *ptr = malloc(sizeof(Bento));
-if (ptr!= NULL) {
+// ensure memory was allocated
+if (ptr!= NULL) 
+    // assign value to a variable in Bento
+    {
     ptr->protein = "chicken";
+    // make sure to free allocated memory once you're finished with the struct
     free(ptr);
-}
+    }
 ```
 
 ## Conclusion
