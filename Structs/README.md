@@ -26,7 +26,11 @@ The `struct` keyword is used to define a composite data type that can group toge
 ## Combining Typedef and Struct
 By combining `typedef` with `struct`, you can simplify the declaration of structures and their usage in your code. This approach reduces the verbosity associated with defining and using custom data types.
 
-```c typedef struct { char *protein; char *side; int calories; } Bento;```
+``` c typedef struct {
+    char *protein;
+    char *side;
+    int calories;
+    } Bento; ```
 
 ## Defining Structs
 Structures can be defined globally, within header files, or in separate header files dedicated to struct definitions. Remember to include the necessary header files in your program if you define structs in external files.
