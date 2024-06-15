@@ -4,14 +4,14 @@
 This repository demonstrates the use of typedef and struct keywords in C programming. These keywords are essential for creating more readable and maintainable code by allowing developers to define custom data types and aliases for existing ones. This guide provides examples and explanations to help you understand how to effectively use these features in your C programs.
 
 ## Table of Contents
--Introduction
--Typedef
--Struct
--Combining Typedef and Struct
--Defining Structs
--Struct Pointers
--Memory Allocation and Dereferencing
--Conclusion
+- Introduction
+- Typedef
+- Struct
+- Combining Typedef and Struct
+- Defining Structs
+- Struct Pointers
+- Memory Allocation and Dereferencing
+- Conclusion
 
 ## Typedef
 The `typedef` keyword allows you to create an alias for a data type, making your code more readable and reducing redundancy. For example, you can create an alias for `unsigned char` as `byte`, which can then be used throughout your code instead of typing out [unsigned char].
