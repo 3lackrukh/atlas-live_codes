@@ -26,17 +26,20 @@ The `struct` keyword is used to define a composite data type that can group toge
 ## Combining Typedef and Struct
 By combining `typedef` with `struct`, you can simplify the declaration of structures and their usage in your code. This approach reduces the verbosity associated with defining and using custom data types.
 
-``` c typedef struct {
-    char *protein;
-    char *side;
-    int calories;
-    } Bento; ```
+``` c
+    typedef struct {
+        char *protein;
+        char *side;
+        int calories;
+    } Bento;
+```
 
 ## Defining Structs
 Structures can be defined globally, within header files, or in separate header files dedicated to struct definitions. Remember to include the necessary header files in your program if you define structs in external files.
 
 Example of a struct definition in a header file (`bento.h`):
 
+``` c
 #ifndef BENTO_H
 #define BENTO_H
 
@@ -50,7 +53,7 @@ typedef struct bento_s
 } bento_t;
 
 #endif /* BENTO_H */
-
+```
 ## Struct Pointers
 Struct pointers allow you to manipulate the data within a struct dynamically. You can assign addresses of structs to pointers and access the struct's members through these pointers.
 
@@ -61,10 +64,13 @@ ptr_to_lunch->protein = "salmon";
 ## Memory Allocation and Dereferencing
 When working with structs, especially with pointers, understanding memory allocation and dereferencing is crucial. Allocating memory for a struct can be done using dynamic memory allocation functions like `malloc()` or `calloc()`. Dereferencing a pointer accesses the value stored at the memory location pointed to by the pointer.
 
+``` c
 Bento *ptr = malloc(sizeof(Bento));
 if (ptr!= NULL) {
     ptr->protein = "chicken";
     free(ptr);
 }
+```
+
 ## Conclusion
 Mastering the use of `typedef` and `struct` in C programming enhances code readability and organization. By understanding how to define, use, and manipulate these constructs, you can write more efficient and maintainable C programs. Explore the examples provided in this repository to gain hands-on experience with these powerful language features.
