@@ -64,8 +64,7 @@ Example of a struct definition in a header file (`bento.h`):
 
 #include <stdio.h>
 
-typedef struct bento_s
-{
+typedef struct bento_s {
     char *protein;
     char *side;
     int calories;
