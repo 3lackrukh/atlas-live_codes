@@ -57,9 +57,11 @@ typedef struct bento_s
 ## Struct Pointers
 Struct pointers allow you to manipulate the data within a struct dynamically. You can assign addresses of structs to pointers and access the struct's members through these pointers.
 
+``` c
 Bento my_lunch;
 Bento *ptr_to_lunch = &my_lunch;
 ptr_to_lunch->protein = "salmon";
+```
 
 ## Memory Allocation and Dereferencing
 When working with structs, especially with pointers, understanding memory allocation and dereferencing is crucial. Allocating memory for a struct can be done using dynamic memory allocation functions like `malloc()` or `calloc()`. Dereferencing a pointer accesses the value stored at the memory location pointed to by the pointer.
