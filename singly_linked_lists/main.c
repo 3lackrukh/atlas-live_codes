@@ -1,17 +1,18 @@
 #include "linked_list.h"
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     node_t *head = NULL;
+    node_t *hookshot;
     
-    // Adding nodes one at a time
+    /* Adding nodes one at a time */
     add_node(&head, "Try");
     add_node(&head, "Force");
     
     printf("List: ");
-    // Correctly initializing hookshot here
-    node_t *hookshot = head;
+    /* Correctly initializing hookshot here */
+    hookshot = head;
     while (hookshot!= NULL)
     {
         printf("%s -> ", hookshot->data);
@@ -19,15 +20,12 @@ int main()
     }
     printf("End\n");
 
-    // Freeing memory
+    /* Freeing memory */
     while (head!= NULL) 
     {
-      //REMEMBER: set the node POINTER hookshot to head
-        node_t *hookshot = head;
+        hookshot = head;
         head = head->next;
         free(hookshot->data);
         free(hookshot);
     }
-
-    return 0;
 }
