@@ -10,7 +10,7 @@ typedef struct node_s {
     struct node_s* next;
 } node_t;
 
-// Function prototypes
+/* Function prototypes */
 void add_node(node_t** head_ref, const char* data);
 
 #endif /* LINKED_LIST_H */
