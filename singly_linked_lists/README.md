@@ -1,11 +1,23 @@
-Understood, let's expand upon the initial prompts to create a more detailed and educational README for the linked lists demonstration suite aimed at Atlas T1 students.
+# Introduction to Linked Lists 
+### for Atlas T1 Students
 
----
 
-# Comprehensive Guide to Linked Lists for Atlas T1 Students
 
-## Table of Contents
+Repository Contents
+The repository contains a simple program demonstrating the use of variadic functions. It includes:
 
+- ### main.c:
+  The main program file that calls add_node function to add nodes with string data to a singly linked list. Prints the list.
+- ### add_node.c:
+  Function for adding nodes to the end of a singly linked list. 
+- ### linked_list.h:
+  Header file containing declarations needed for both source files.
+- ### README.md:
+  This document.
+- ### link:
+  This executable was compiled with: gcc -Wall -Werror -Wextra -pedantic -std=gnu89.
+  
+  ## Table of Contents
 - [Introduction](#introduction)
 - [Understanding Structs](#understanding-structs)
 - [Challenges with Arrays](#challenges-with-arrays)
@@ -19,7 +31,7 @@ Understood, let's expand upon the initial prompts to create a more detailed and 
 
 ## Introduction<a name="introduction"></a>
 
-Welcome to the world of linked lists As Atlas T1 students, you're embarking on a journey to understand one of the most fundamental data structures in computer science. Linked lists offer a flexible and efficient way to store and manipulate collections of data, providing a dynamic alternative to traditional arrays.
+Welcome to the world of linked lists! As Atlas T1 students, you're embarking on a journey to understand one of the most fundamental data structures in computer science. Linked lists offer a flexible and efficient way to store and manipulate collections of data, providing a dynamic alternative to traditional arrays.
 
 ## Understanding Structs<a name="understanding-structs"></a>
 
