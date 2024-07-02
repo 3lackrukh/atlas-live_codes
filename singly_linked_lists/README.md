@@ -15,8 +15,7 @@ The repository contains a simple program demonstrating the use of variadic funct
 - ### README.md:
   This document.
 - ### link:
-  This executable was compiled with:
-  #### gcc -Wall -Werror -Wextra -pedantic -std=gnu89.
+  This executable was compiled with: gcc -Wall -Werror -Wextra -pedantic -std=gnu89.
   
 - [Introduction](#introduction)
 - [Understanding Structs](#understanding-structs)
