@@ -10,7 +10,7 @@ int main(void)
     add_node(&head, "Try");
     add_node(&head, "Force");
     
-    printf("List: ");
+    printf("What does this mean? ");
     /* Correctly initializing hookshot here */
     hookshot = head;
     while (hookshot!= NULL)
@@ -18,7 +18,7 @@ int main(void)
         printf("%s -> ", hookshot->data);
         hookshot = hookshot->next;
     }
-    printf("End\n");
+    printf("<3<3<3\n");
 
     /* Freeing memory */
     while (head!= NULL) 
