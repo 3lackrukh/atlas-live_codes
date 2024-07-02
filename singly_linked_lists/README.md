@@ -13,8 +13,8 @@ Understood, let's expand upon the initial prompts to create a more detailed and 
 - [Declaring a Node Structure](#declaring-a-node-structure)
 - [Creating the Head of the List](#creating-the-head-of-the-list)
 - [Inserting Nodes](#inserting-nodes)
-- [Naming Conventions] (#naming-conventions-for-linked-list-pointers)
-- [Best Practices] (#best-practices-for-safe-memory-management)
+- [Naming Conventions](#naming-conventions-for-linked-list-pointers)
+- [Best Practices](#best-practices-for-safe-memory-management)
 - [Conclusion](#conclusion)
 
 ## Introduction<a name="introduction"></a>
