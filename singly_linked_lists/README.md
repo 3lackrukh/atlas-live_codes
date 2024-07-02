@@ -65,7 +65,7 @@ node_t* head = NULL;
 
 Naming conventions play a crucial role in writing clear, maintainable, and bug-free code. In the context of linked lists, specific names like `head`, `current`, and `temp` are commonly used for pointers that serve distinct roles throughout the lifecycle of a linked list. Understanding these conventions and their implications can significantly aid in avoiding segmentation faults and ensuring safe memory management.
 
-### Naming Conventions for Linked List Pointers
+### Naming Conventions for Linked List Pointers<a name="naming-conventions-for-linked-list-pointers"></a>
 
 #### `head`
 - **Usage**: The `head` pointer typically points to the first node in the list. Initially, it is set to `NULL` to signify an empty list.
@@ -82,7 +82,7 @@ Naming conventions play a crucial role in writing clear, maintainable, and bug-f
 - **Purpose**: It temporarily holds the address of a node while the original pointer (`head`, `current`, etc.) is reassigned. This is crucial for maintaining access to nodes that are being replaced or removed.
 - **Safety**: Using `temp` helps prevent loss of access to parts of the list during modifications. Without `temp`, reassigning `head` or `current` could result in losing access to nodes that are still needed, leading to segmentation faults or incorrect behavior.
 
-### Best Practices for Safe Memory Management
+### Best Practices for Safe Memory Management<a name="best-practices-for-safe-memory-management"></a>
 
 - **Always Initialize Pointers**: Before use, pointers should be initialized to `NULL` to avoid dangling pointers.
 - **Check for `NULL` Before Accessing**: Before dereferencing a pointer, check if it is `NULL` to avoid segmentation faults.
