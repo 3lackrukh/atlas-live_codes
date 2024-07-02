@@ -28,5 +28,5 @@ int main(void)
         free(hookshot->data);
         free(hookshot);
     }
-    return(0)
+    return(0);
 }
