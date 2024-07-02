@@ -1,7 +1,7 @@
 # Introduction to Linked Lists 
 ### for Atlas T1 Students
 
-## Table of Contents
+
 
 Repository Contents
 The repository contains a simple program demonstrating the use of variadic functions. It includes:
@@ -17,6 +17,7 @@ The repository contains a simple program demonstrating the use of variadic funct
 - ### link:
   This executable was compiled with: gcc -Wall -Werror -Wextra -pedantic -std=gnu89.
   
+  ## Table of Contents
 - [Introduction](#introduction)
 - [Understanding Structs](#understanding-structs)
 - [Challenges with Arrays](#challenges-with-arrays)
