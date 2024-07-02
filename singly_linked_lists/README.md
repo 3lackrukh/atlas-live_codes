@@ -6,14 +6,10 @@
 Repository Contents
 The repository contains a simple program demonstrating the use of variadic functions. It includes:
 
-- ### main.c:
-  The main program file that calls add_node function to add nodes with string data to a singly linked list. Prints the list.
-- ### add_node.c:
-  Function for adding nodes to the end of a singly linked list. 
-- ### linked_list.h:
-  Header file containing declarations needed for both source files.
-- ### README.md:
-  This document.
+- ### main.c: #### main program file. Calls add_node function to add nodes with string data to a singly linked list. Prints the list.
+- ### add_node.c: #### Function for adding nodes to the end of a singly linked list. 
+- ### linked_list.h: #### Header file containing declarations needed for both source files.
+- ### README.md: #### This document.
 - ### link:
   This executable was compiled with: gcc -Wall -Werror -Wextra -pedantic -std=gnu89.
   
