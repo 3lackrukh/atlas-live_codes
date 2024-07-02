@@ -1,3 +1,5 @@
+#include "linked_list.h"
+
 void add_node(node_t** head_ref, const char* str)
 {
     // Creating a new node with the data to be added
