@@ -4,7 +4,7 @@
 
 
 Repository Contents
-The repository contains a simple program demonstrating the use of variadic functions. It includes:
+The repository contains a simple program demonstrating the use of singly linked lists. It includes:
 
 - #### main.c: main program file. Calls add_node function to add nodes with string data to a singly linked list. Prints the list.
 - #### add_node.c: Function for adding nodes to the end of a singly linked list. 
@@ -103,5 +103,3 @@ By adhering to these naming conventions and best practices, developers can write
 As you delve deeper into data structures, remember that linked lists are just the beginning. They serve as a foundation for more advanced data structures, offering a glimpse into the vast landscape of algorithms and data manipulation techniques. Thank you for engaging with this material, and happy coding!
 
 ---
-
-This expanded README aims to provide a thorough introduction to linked lists, incorporating interactive elements and conceptual metaphors to enhance understanding. It builds upon the initial prompts, offering a comprehensive guide suitable for Atlas T1 students.
