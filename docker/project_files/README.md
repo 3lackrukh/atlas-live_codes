@@ -156,49 +156,50 @@ Have we been over flask?
                     from making requests to your API.
 
 
-FILL OUT DOCKERFILE
+# FILL OUT DOCKERFILE
 
-# Use specify Ubuntu version image as the base
+### Specify Ubuntu version image as the base
 FROM ubuntu:22.04
 
-# Update APT
+### Update APT
 RUN apt-get update
 RUN apt-get upgrade -y
 
-# Install python3 and pip, then clean up in a single RUN command
+### Install python3 and pip, then clean up in a single RUN command
 RUN apt-get install -y python3 python3-pip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Set the working directory inside the container
+### Set the working directory inside the container
 WORKDIR /app
 
-# Copy the api file into the container
+### Copy the api file into the container
 COPY api.py .
 
-# Copy the project_files directory into the container
+### Copy the project_files directory into the container
 COPY project_files ./project_files
 
-# Use pip to install flask and flask-cors
+### Use pip to install flask and flask-cors
 RUN pip3 install flask flask-cors
 
-# Expose port for flask
+### Expose port for flask
 EXPOSE 5252
 
-# Run flask on exposed port
+### Run flask on exposed port
 CMD python3 api.py
 
 
 
-## Build the Image
+### Build the Image
 	sudo docker build -t my-flask-app .
      		-- notice the layers executing
 
 	sudo docker run -p 5252:5252 my-flask-app
 
-OPEN A TERMINAL IN YOUR CONTAINER
+## OPEN A TERMINAL IN YOUR CONTAINER
 	docker exec -it container_name /bin/bash
 
+### Check out your api landing
 	http://localhost:5252/api/hello
 
 
