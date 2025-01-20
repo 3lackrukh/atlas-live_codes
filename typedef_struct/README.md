@@ -1,4 +1,4 @@
-# README.md for GitHub Repository Demonstrating Typedef and Struct Concepts in C for Atlas C24
+# Demonstrating Typedef and Struct Concepts in C for Atlas C24
 
 ## Introduction
 This repository demonstrates the use of typedef and struct keywords in C programming. 
