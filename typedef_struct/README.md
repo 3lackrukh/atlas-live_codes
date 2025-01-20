@@ -1,4 +1,4 @@
-# Demonstrating Typedef and Struct Concepts in C for Atlas C24
+# Typedef and Struct Concepts in C for Atlas T1 Students
 
 ## Introduction
 This repository demonstrates the use of typedef and struct keywords in C programming. 
