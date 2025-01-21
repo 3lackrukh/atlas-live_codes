@@ -9,6 +9,8 @@ These keywords are essential for creating more readable and maintainable code by
 
 This guide provides examples and explanations to help you understand how to effectively use these features in your C programs.
 
+https://www.canva.com/design/DAGIcLI-VOo/_fuKx6tyYMk5Z3qehs83GQ/view
+
 ## Table of Contents
 - Introduction
 - Typedef
