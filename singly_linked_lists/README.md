@@ -3,7 +3,6 @@
 
 
 
-Repository Contents
 The repository contains a simple program demonstrating the use of singly linked lists. It includes:
 
 - #### main.c: main program file. Calls add_node function to add nodes with string data to a singly linked list. Prints the list.
